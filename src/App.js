@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, Clock, Send, Trash2, Key, Plus, Check, X, Sparkles, Edit2 } from 'lucide-react';
+import { Calendar, Clock, Send, Trash2, Key, Check, X, Sparkles, Edit2 } from 'lucide-react';
 import './App.css';
 
 function App() {
