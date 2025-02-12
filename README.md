@@ -1,13 +1,14 @@
 # Business Marketing Assistant
 
-A powerful React-based marketing assistant tool that helps small businesses manage their online presence across multiple platforms. The application uses OpenAI's GPT-3.5 Turbo model to generate platform-specific content and provides a comprehensive post management system.
+A frontend-only React application that helps small businesses manage their online presence across multiple platforms. The application uses OpenAI's GPT-3.5 Turbo model to generate platform-specific content and provides a comprehensive post management system, with all data stored locally in the browser.
 
 ## Features
 
 ### 1. AI-Powered Content Generation
-- Platform-specific content optimization
-- Uses existing content as input for AI enhancement
-- Custom prompts based on platform and post type
+- Generate optimized content for different platforms
+- Enhance existing content using AI
+- Platform-specific content suggestions
+- Custom prompts based on post type
 - Character limit validation
 
 ### 2. Multi-Platform Support
@@ -20,10 +21,11 @@ A powerful React-based marketing assistant tool that helps small businesses mana
 - TikTok (2,200 characters)
 
 ### 3. Post Management
-- Schedule posts for multiple platforms
-- Edit and update scheduled posts
-- Track post history and changes
-- Delete scheduled posts
+- Create and schedule posts
+- Edit scheduled posts
+- Delete posts
+- Track post history with timestamps
+- Local storage for data persistence
 
 ### 4. Post Types
 - General Updates
@@ -34,12 +36,13 @@ A powerful React-based marketing assistant tool that helps small businesses mana
 - Behind the Scenes
 - Tips & Tricks
 
-### 5. Security & Validation
+### 5. Features & Validation
 - Secure OpenAI API key management
 - Input validation
 - Date validation for scheduling
-- Platform-specific content validation
-- Error handling for API calls
+- Platform-specific content limits
+- Error handling and notifications
+- Responsive design
 
 ## Getting Started
 
@@ -65,14 +68,32 @@ npm start
 
 1. Get your OpenAI API key from [OpenAI Platform](https://platform.openai.com/)
 2. Enter your API key in the application's "OpenAI API Configuration" section
+3. The API key will be stored securely in your browser's localStorage
 
 ## Technologies Used
 
-- React
-- Tailwind CSS
-- Framer Motion
-- OpenAI API (GPT-3.5 Turbo)
-- LocalStorage for data persistence
+- React (Frontend only)
+- Tailwind CSS for styling
+- Framer Motion for animations
+- OpenAI API (GPT-3.5 Turbo) for content generation
+- Browser's localStorage for data persistence
+
+## Key Implementation Details
+
+1. Frontend-Only Architecture:
+   - No backend server required
+   - All data stored in browser's localStorage
+   - Direct OpenAI API integration from frontend
+
+2. Data Persistence:
+   - Posts stored in localStorage
+   - API key securely saved in localStorage
+   - Post history and edits tracked locally
+
+3. Security:
+   - API key stored securely in localStorage
+   - Input validation and sanitization
+   - Error handling for API calls
 
 ## Contributing
 
